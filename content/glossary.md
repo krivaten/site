@@ -159,9 +159,7 @@ Specialists who work to prevent, assess, diagnose, and treat speech, language, s
 
 ## STDOUT
 Stdout, also known as standard output, is the default file descriptor where a process can write output.
-
-![](Terminal%20-%20Cat.png)
-
+![[../public/assets/terminal-cat.png|terminal-cat.png]]
 ## Suffrage
 The right to vote in political elections.
 
