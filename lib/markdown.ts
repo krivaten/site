@@ -40,7 +40,14 @@ const parse = async function (source, format, scope) {
           [remarkSmartypants, { quotes: false, dashes: "oldschool" }],
           remarkMath,
           remarkCallouts,
-          [remarkWikiLink, { permalinks, pathFormat: "obsidian-short" }],
+          [
+            remarkWikiLink,
+            {
+              permalinks,
+              pathFormat: "obsidian-short",
+              hrefTemplate: (permalink) => permalink.replace(/(\.\.\/)+public\//, "/"),
+            },
+          ],
           [
             remarkToc,
             {

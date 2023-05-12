@@ -23,11 +23,7 @@ html {
   top: 3.6rem; /* multiple of $line-height used on the tooltip body (defined in tooltipBodyStyle) */
   height: 1.2rem; /* ($top + $height)/$line-height is the number of lines we want to clip tooltip text at*/
   width: 10rem;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%);
 }
 
 /* Heading links with # icons on hover */
@@ -35,7 +31,7 @@ html {
   visibility: hidden;
 }
 
-#mdxpage iframe {
+#mdxpage iframe:not([src*="youtube.com"]) {
   height: 80vh;
 }
 
