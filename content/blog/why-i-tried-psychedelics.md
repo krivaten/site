@@ -8,8 +8,8 @@ tags:
 type: blog
 category: life
 publish: true
-created: 2022-11-13
-updated: 2023-05-10
+created: 2021-07-02
+updated: 2023-05-11
 ---
 
 
@@ -61,7 +61,7 @@ Over the last couple of decades alone, research is showing how psilocybin can be
 
 So in my desire to address my personal challenges with emotional connection, depression, faith, and more, after four and a half years and lots of research, I decided to give them a try.
 
-For me, the [[2022-05-28 2230 - My First Trip|experience]] and results have been wonderful. In the months since then, I've gotten off anti-depressants, feel much more emotionally connected to my bride and God, have a more robust faith, and when I tell someone I love them, it's not just some dumb platitude I feel obligated to say as a Christian. I know I actually mean it.
+For me, the [[./my-first-trip|experience]] and results have been wonderful. In the months since then, I've gotten off anti-depressants, feel much more emotionally connected to my bride and God, have a more robust faith, and when I tell someone I love them, it's not just some dumb platitude I feel obligated to say as a Christian. I know I actually mean it.
 
 ## Conclusion
 
@@ -71,4 +71,4 @@ It just so happens that I have also allowed myself to partake of a part of God's
 
 The results have been outstanding, and I look forward to sharing them with you.
 
-If you'd like to read about my first trip, [[2022-05-28 2230 - My First Trip|you can read about it here]].
+If you'd like to read about my first trip, [[./my-first-trip|you can read about it here]].
