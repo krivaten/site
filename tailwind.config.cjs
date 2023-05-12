@@ -37,11 +37,19 @@ module.exports = {
           dark: colors.sky[400],
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            "iframe[src*='youtube.com']": {
+              aspectRatio: "16/9",
+              width: "100%",
+              height: "auto",
+            },
+          },
+        },
+      },
     },
   },
   /* eslint global-require: off */
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/line-clamp"),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/line-clamp")],
 };
