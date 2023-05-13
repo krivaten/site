@@ -41,7 +41,7 @@ Here are some things that have been adding value or impact to my life lately:
 - Heather Heyig
 - Lex Fridman
 
-## Top five recent books
+### Top five recent books
 
 - [The Overstory by: Richard Powers](https://amzn.to/2ZVrAHz)
 - [Infinite by: Jeremy Robinson](https://amzn.to/2Y8fhqf)
