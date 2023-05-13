@@ -47,6 +47,7 @@ We got some **bold text**, some _italic text_, and some ~~strikethrough text~~.
 
 ![[04 - Published/assets/bug.jpeg]]
 
+![[code.jpeg|Sample alt tag]]
 ## Videos
 
 <iframe src="https://www.youtube.com/embed/sCkWsAAwpF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
