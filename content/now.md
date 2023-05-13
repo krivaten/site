@@ -1,7 +1,7 @@
 ---
 title: Now
 description:
-banner: "04 - Published/assets/default.jpg"
+banner: "06 - Assets/default.jpg"
 tags:
 publish: true
 created: 2018-06-01
