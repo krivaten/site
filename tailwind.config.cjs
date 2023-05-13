@@ -1,5 +1,4 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -18,23 +17,41 @@ module.exports = {
         "8xl": "88rem",
       },
       fontFamily: {
-        sans: ["ui-sans-serif", ...defaultTheme.fontFamily.sans],
-        serif: ["ui-serif", ...defaultTheme.fontFamily.serif],
-        mono: ["ui-monospace", ...defaultTheme.fontFamily.mono],
-        headings: ["-apple-system", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        serif: [...defaultTheme.fontFamily.serif],
+        mono: [...defaultTheme.fontFamily.mono],
+        headings: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         background: {
-          DEFAULT: colors.white,
-          dark: colors.slate[900],
+          DEFAULT: "#F9F7F0",
+          dark: "#242226",
         },
         primary: {
-          DEFAULT: colors.gray[700],
-          dark: colors.gray[300],
+          DEFAULT: "#D1461E",
+          50: "#fdf6f4",
+          100: "#faede9",
+          200: "#f4d1c7",
+          300: "#edb5a5",
+          400: "#df7e62",
+          500: "#d1461e",
+          600: "#bc3f1b",
+          700: "#9d3517",
+          800: "#7d2a12",
+          900: "#66220f",
         },
         secondary: {
-          DEFAULT: colors.sky[400],
-          dark: colors.sky[400],
+          DEFAULT: "#6e5c52",
+          50: "#ececec",
+          100: "#cfcfcf",
+          200: "#afafaf",
+          300: "#948e8b",
+          400: "#81746e",
+          500: "#6e5c52",
+          600: "#62534b",
+          700: "#524640",
+          800: "#443a37",
+          900: "#342d2b",
         },
       },
       typography: {
@@ -44,6 +61,7 @@ module.exports = {
               aspectRatio: "16/9",
               width: "100%",
               height: "auto",
+              border: "none",
             },
           },
         },

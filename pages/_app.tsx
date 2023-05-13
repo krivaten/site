@@ -7,19 +7,13 @@ import { useEffect } from "react";
 import type { AppProps } from "next/app";
 
 import siteConfig from "../config/siteConfig";
-import {
-  Layout,
-  SearchProvider,
-  pageview,
-  ThemeProvider,
-  NavItem,
-  NavGroup,
-} from "@flowershow/core";
+import { SearchProvider, pageview, ThemeProvider, NavItem, NavGroup } from "@flowershow/core";
 
 import "tailwindcss/tailwind.css";
 import "../styles/docsearch.css";
 import "../styles/global.css";
 import "../styles/prism.css";
+import { Layout } from "@/components/Layout";
 
 export interface CustomAppProps {
   meta: {

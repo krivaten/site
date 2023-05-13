@@ -7,12 +7,19 @@ import Features from "../components/Features";
 import SelfPublishSteps from "../components/SelfPublishSteps";
 import CloudPublishSteps from "../components/CloudPublishSteps";
 import type { CustomAppProps } from "./_app";
+import Head from "next/head";
 
 type HomePageProps = CustomAppProps;
 
 export default function Home() {
   return (
     <main>
+      <Head>
+        <meta
+          name="description"
+          content="A haven for resilient hearts and sharp minds. Thoughtful explorations on faith, family, and home, alongside insightful writings on software engineering."
+        />
+      </Head>
       <Hero />
       <WhatIsFlowershow />
 
@@ -28,9 +35,8 @@ export default function Home() {
         <div className="prose dark:prose-invert mx-auto max-w-2xl px-4 lg:max-w-4xl lg:px-8 xl:px-12">
           <h2 className="text-center">Why the name?</h2>
           <p>
-            Flowershow is about sharing your digital garden -- putting it "on
-            show" to the world. And what do you have in your garden? Flowers!
-            Hence "Flowershow": it shows off your digital garden to the world!
+            Flowershow is about sharing your digital garden -- putting it "on show" to the world. And what do you have
+            in your garden? Flowers! Hence "Flowershow": it shows off your digital garden to the world!
           </p>
         </div>
       </div>
@@ -38,9 +44,7 @@ export default function Home() {
   );
 }
 
-export const getStaticProps: GetStaticProps = async (): Promise<
-  GetStaticPropsResult<HomePageProps>
-> => {
+export const getStaticProps: GetStaticProps = async (): Promise<GetStaticPropsResult<HomePageProps>> => {
   return {
     props: {
       meta: {
