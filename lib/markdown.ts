@@ -45,7 +45,14 @@ const parse = async function (source, format, scope) {
             {
               permalinks,
               pathFormat: "obsidian-short",
-              hrefTemplate: (permalink) => permalink.replace(/(\.\.\/)+public\//, "/"),
+              hrefTemplate: (permalink) => {
+                let path = permalink;
+                if (path.match(/\.(jpeg|jpg|gif|png|svg)$/)) {
+                  path = path.replace(/^.*[\\\/]/, "");
+                  path = `/blog/assets/${path}`;
+                }
+                return path;
+              },
             },
           ],
           [
