@@ -1,7 +1,7 @@
 ---
 title: Why I tried psychedelics
 description:
-banner: "06 - Assets/quick.jpeg"
+banner: "06 - Assets/why-i-tried.jpg"
 tags: #pyschedelics
 category: life
 type: blog
