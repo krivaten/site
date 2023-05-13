@@ -1,7 +1,7 @@
 ---
 title: Test Document
 description:
-banner: "04 - Published/assets/default.jpg"
+banner: "06 - Assets/default.jpg"
 tags:
 type:
 publish: true

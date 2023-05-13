@@ -1,7 +1,7 @@
 ---
 title: My first trip
 description:
-banner: "06 - Assets/quick.jpeg"
+banner: "06 - Assets/my-first-trip.jpg"
 tags: #pyschedelics
 category: life
 type: blog
