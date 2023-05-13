@@ -1,11 +1,10 @@
 ---
-title: Test
-slug: test
-description: 
-banner: "05 - Assets/quick.jpeg"
+title: Test Document
+description:
+banner: "04 - Published/assets/default.jpg"
 tags:
 type:
-publish: test
+publish: true
 created: 2023-01-06
 updated: 2023-05-11
 ---
@@ -22,30 +21,33 @@ Consider not what brings you joy or sorrow, but what brings you closer to virtue
 
 Life is fleeting, focus not on the past or the future, but on the present. Find serenity in accepting what happens. To accept without arrogance, to let go with indifference, such is the way of nature. The sole good in life is living according to reason, the sole evil is living contrary to it.
 
-We got some **bold text**, some *italic text*, and some ~~strikethrough text~~.
+We got some **bold text**, some _italic text_, and some ~~strikethrough text~~.
 
 ## Links
 
-- [[./blog/my-first-trip|my-first-trip]]
-- [[./blog/my-first-trip|Custom Name]]
+- [[my-first-trip]]
+- [[my-first-trip|Custom Name]]
 - [External Link](https://google.com)
 
 ## Lists
 
 ### Numbers
+
 1. Number 1
 2. Number 2
 3. Number 3
 
 ### Bullets
+
 - Bullet 1
 - Bullet 2
 - Bullet 3
 
 ## Images
 
-![[../public/assets/bug.jpeg|bug.jpeg]]
+![[04 - Published/assets/bug.jpeg]]
 
+![[code.jpeg|Sample alt tag]]
 ## Videos
 
 <iframe src="https://www.youtube.com/embed/sCkWsAAwpF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

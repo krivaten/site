@@ -1,27 +1,24 @@
 ---
 title: Why I tried psychedelics
-slug: why-i-tried-psychedelics
-description: null
-banner: 05 - Assets/quick.jpeg
-tags:
-  - psychedelics
-type: blog
+description:
+banner: "06 - Assets/quick.jpeg"
+tags: #pyschedelics
 category: life
+type: blog
 publish: true
 created: 2021-07-02
 updated: 2023-05-11
 ---
 
-
 One Wednesday night in the late nineties, I was at a high school Bible study in Riverside, CA. There was a guest speaker there who gave a beautiful and inspiring message that then wrapped up with an open-ended prayer session.
 
-However, during this prayer, he invited people who wanted to _experience the Holy Spirit_ to simply open themselves up to him, promising that if we just asked, then he would make himself known. This session went on for a solid thirty minutes with countless kids around me weeping and sobbing as they were _touched by the Holy Spirit_.
+However, during this prayer, he invited people who wanted to *experience the Holy Spirit* to simply open themselves up to him, promising that if we just asked, then he would make himself known. This session went on for a solid thirty minutes with countless kids around me weeping and sobbing as they were *touched by the Holy Spirit*.
 
-The whole time, I felt... nothing. I so badly wanted to _experience God_ but felt like I wasn't allowed. Like I was... prevented.
+The whole time, I felt... nothing. I so badly wanted to *experience God* but felt like I wasn't allowed. Like I was... prevented.
 
 Over the years, this desire and feeling never left. I craved to have this real relationship with God that so many Christians talk about, to the point that I would pray for salvation again and again, because surely the reason I wasn't experiencing God was that I wasn't earnest enough. But still... nothing.
 
-Then, in my early twenties, I more or less gave up on the idea of emotionally connecting with God. Instead, I dove into theology, apologetics, and philosophy. While immensely edifying, even to this day, I started rolling my eyes at the charismatic folks who would dance, flail, and speak in tongues in church. Now, their faith seemed too emotionally driven, void of any solid foundation, whereas mine was grounded in my new robust theology based on _"reality."_
+Then, in my early twenties, I more or less gave up on the idea of emotionally connecting with God. Instead, I dove into theology, apologetics, and philosophy. While immensely edifying, even to this day, I started rolling my eyes at the charismatic folks who would dance, flail, and speak in tongues in church. Now, their faith seemed too emotionally driven, void of any solid foundation, whereas mine was grounded in my new robust theology based on *"reality."*
 
 Over the years, this coldness in me became a topic of much debate between my bride and me. But of course, she was just another person driven by those damned emotions; what could she possibly know?
 
@@ -31,17 +28,17 @@ Fast forward to the Spring of 2017. On a cross-country drive, I found myself lis
 
 I came across an episode where he talked about being a staunch atheist throughout his youth. That is until he went on a vision quest where he took a heavy dose of psychedelics, which resulted in an experience that changed his life forever.
 
-He explained that up until this point, he could only see things through the lens of _logic_ and _reason_. However, taking psychedelics broke him out of this way of thinking, convincing him that his atheism was a bankrupt philosophy and that there was something more to life.
+He explained that up until this point, he could only see things through the lens of *logic* and *reason*. However, taking psychedelics broke him out of this way of thinking, convincing him that his atheism was a bankrupt philosophy and that there was something more to life.
 
-The funny thing is that I, too, had described myself as someone _ruled_ by _logic_ and _reason_. So when Aubrey said those words, my ears perked up. I couldn't help but wonder if these compounds could be a solution to my life-long struggle of being unable to emotionally connect, not just with God, but with others as well.
+The funny thing is that I, too, had described myself as someone *ruled* by *logic* and *reason*. So when Aubrey said those words, my ears perked up. I couldn't help but wonder if these compounds could be a solution to my life-long struggle of being unable to emotionally connect, not just with God, but with others as well.
 
 Over the next four and a half years, my interest would wax and wane, but I steadily sought to answer a handful of questions. Primarily, I wanted to know if psychedelics could help break down the barriers in my way of thinking to:
 
--   Go deeper in my faith
--   Add a layer of compassion to my thinking
--   Experience profound love and beauty
--   Improve my depression
--   Make me a better citizen of my environment
+- Go deeper in my faith
+- Add a layer of compassion to my thinking
+- Experience profound love and beauty
+- Improve my depression
+- Make me a better citizen of my environment
 
 ## How do I justify this as a Christian?
 
@@ -53,22 +50,22 @@ It was [Maria Sabina](https://en.wikipedia.org/wiki/Mar%C3%ADa_Sabina) who fir
 
 While there is no doubt that mushrooms in general and psychedelics specifically should be handled with caution and respect, just like many other things (e.g., money, sex, food, alcohol, etc.), a need for caution is not a valid argument for flat-out rejection.
 
-Over the last several decades, our society has shunned an entire category of powerful medicine while eagerly reaching for prescription drugs with lists of side effects a mile long, which often just mask symptoms instead of solve the actual problem. Something _needs_ to change.
+Over the last several decades, our society has shunned an entire category of powerful medicine while eagerly reaching for prescription drugs with lists of side effects a mile long, which often just mask symptoms instead of solve the actual problem. Something *needs* to change.
 
-These fascinating organisms serve as nutrient highways between plants, are grown and farmed by insects, and have been used worldwide as powerful medicines to help the mind, body, and spirit for _thousands_ of years.
+These fascinating organisms serve as nutrient highways between plants, are grown and farmed by insects, and have been used worldwide as powerful medicines to help the mind, body, and spirit for *thousands* of years.
 
 Over the last couple of decades alone, research is showing how psilocybin can be used to treat PTSD, depression, anxiety, eating disorders, substance abuse, and other mental and neurological disorders, with little to no need for ongoing treatment. Additionally, just after one session people consistently report being more loving, kind, empathic, tolerant, and happy for years after the experience.
 
 So in my desire to address my personal challenges with emotional connection, depression, faith, and more, after four and a half years and lots of research, I decided to give them a try.
 
-For me, the [[./my-first-trip|experience]] and results have been wonderful. In the months since then, I've gotten off anti-depressants, feel much more emotionally connected to my bride and God, have a more robust faith, and when I tell someone I love them, it's not just some dumb platitude I feel obligated to say as a Christian. I know I actually mean it.
+For me, the [[my-first-trip|experience]] and results have been wonderful. In the months since then, I've gotten off anti-depressants, feel much more emotionally connected to my bride and God, have a more robust faith, and when I tell someone I love them, it's not just some dumb platitude I feel obligated to say as a Christian. I know I actually mean it.
 
 ## Conclusion
 
-While I hope it is _not_ the case, I understand if you are shocked, offended, or angered by what I have written here. But please know that I sincerely do not wish to defame, discredit, or undermine the Christian faith; quite the opposite! I am still a gospel-loving devout follower of Jesus and don't see that changing.
+While I hope it is *not* the case, I understand if you are shocked, offended, or angered by what I have written here. But please know that I sincerely do not wish to defame, discredit, or undermine the Christian faith; quite the opposite! I am still a gospel-loving devout follower of Jesus and don't see that changing.
 
 It just so happens that I have also allowed myself to partake of a part of God's beautiful creation which is often frowned upon in traditional circles. I did this in an attempt to break through mental barriers I couldn't otherwise figure out how to pass.
 
 The results have been outstanding, and I look forward to sharing them with you.
 
-If you'd like to read about my first trip, [[./my-first-trip|you can read about it here]].
+If you'd like to read about my first trip, [[my-first-trip|you can read about it here]].

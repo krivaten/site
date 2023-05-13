@@ -1,9 +1,8 @@
 ---
 title: About Me
-slug: about
-description: 
-banner: "05 - Assets/sand.jpeg"
-tags: 
+description:
+banner: "04 - Published/assets/default.jpg"
+tags:
 publish: true
 created: 2023-05-10
 updated: 2023-05-10
@@ -19,7 +18,7 @@ I've also battled depression, anxiety, suicide, faith, church, marriage, communi
 
 Along the way, I've found safe passage through my faith, stoicism, elements of mysticism, psychedelics, and my pursuit of encouraging others toward meaning and community.
 
-Maybe you'll relate to me in feeling like we've made life so much more complicated than it needs to be. Or perhaps you're like I _used_ to be, stuck, waiting for a voice from the sky to dictate every step we're supposed to take.
+Maybe you'll relate to me in feeling like we've made life so much more complicated than it needs to be. Or perhaps you're like I *used* to be, stuck, waiting for a voice from the sky to dictate every step we're supposed to take.
 
 But sometimes, patience is a complete waste of time. **Let's start by building momentum**, one muddy and sloppy step at a time. Together, we'll explore how to have a healthier outlook and break down outdated stigmas we've accrued within our lives, our faith, and our philosophy.
 
