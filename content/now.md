@@ -1,9 +1,8 @@
 ---
 title: Now
-slug: now
-description: 
-banner: "05 - Assets/sand.jpeg"
-tags: 
+description:
+banner: "04 - Published/assets/default.jpg"
+tags:
 publish: true
 created: 2018-06-01
 updated: 2023-05-10
@@ -27,41 +26,41 @@ Here are some things that have been adding value or impact to my life lately:
 
 ### Top five topics
 
--   Christian Faith
--   [Simulation Theory](https://www.simulation-argument.com/simulation.html)
--   [Stoicism](https://dailystoic.com/what-is-stoicism-a-definition-3-stoic-exercises-to-get-you-started/)
--   Homesteading, Gardening, Hydroponics, and Mycology
--   Social Climate Change
+- Christian Faith
+- [Simulation Theory](https://www.simulation-argument.com/simulation.html)
+- [Stoicism](https://dailystoic.com/what-is-stoicism-a-definition-3-stoic-exercises-to-get-you-started/)
+- Homesteading, Gardening, Hydroponics, and Mycology
+- Social Climate Change
 
 ### Top five people
 
--   [Akira the Don](https://www.akirathedon.com/)
--   [Eric Weinstein](https://theportal.wiki/wiki/Main_Page)
--   Jordan Peterson
--   Brett Weinstein
--   Heather Heyig
--   Lex Fridman
+- [Akira the Don](https://www.akirathedon.com/)
+- [Eric Weinstein](https://theportal.wiki/wiki/Main_Page)
+- Jordan Peterson
+- Brett Weinstein
+- Heather Heyig
+- Lex Fridman
 
 ## Top five recent books
 
--   [The Overstory by: Richard Powers](https://amzn.to/2ZVrAHz)
--   [Infinite by: Jeremy Robinson](https://amzn.to/2Y8fhqf)
--   [Making Sense of God by: Timothy Keller](https://amzn.to/3oqYtWA)
--   [Meditations by: Marcus Aurelius](https://amzn.to/2ZHp07E)
--   [The Immortality Key by: Brian Muraresku](https://amzn.to/3D80L0O)
+- [The Overstory by: Richard Powers](https://amzn.to/2ZVrAHz)
+- [Infinite by: Jeremy Robinson](https://amzn.to/2Y8fhqf)
+- [Making Sense of God by: Timothy Keller](https://amzn.to/3oqYtWA)
+- [Meditations by: Marcus Aurelius](https://amzn.to/2ZHp07E)
+- [The Immortality Key by: Brian Muraresku](https://amzn.to/3D80L0O)
 
 ### Top five products and brands
 
--   [Obsidian](https://obsidian.md/)
--   [No Mans Sky](https://www.nomanssky.com/)
--   [Spartan Race](https://www.spartan.com/en)
--   [F3](https://f3nation.com/)
--   [GoRuck](https://www.goruck.com/)
+- [Obsidian](https://obsidian.md/)
+- [No Mans Sky](https://www.nomanssky.com/)
+- [Spartan Race](https://www.spartan.com/en)
+- [F3](https://f3nation.com/)
+- [GoRuck](https://www.goruck.com/)
 
 ### Top five podcasts
 
--   [Dark Horse](https://open.spotify.com/show/57R7dOcs60jUfOnuNG0J1R?si=Fl3qv_SxR1Wpsy2rIjsC0Q&dl_branch=1)
--   [The Portal](https://open.spotify.com/show/3qv8BS1HzrgKpDnXSlYWWL?si=vVNmrl97Qju10gtF8Bw_7g&dl_branch=1)
--   [Joe Rogan](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=kRD5V830SRCvjRLpnYqjmA&dl_branch=1)
--   [Darknet Diaries](https://open.spotify.com/show/4XPl3uEEL9hvqMkoZrzbx5?si=GRpApkqjR2Omq5wP8iCGfA&dl_branch=1)
--   [Timothy Keller Sermons](https://open.spotify.com/show/5hYDVSeY9KWSpkI4YlSzKF?si=ZKWsqaewSUG90UH5a1B7tQ&dl_branch=1)
+- [Dark Horse](https://open.spotify.com/show/57R7dOcs60jUfOnuNG0J1R?si=Fl3qv_SxR1Wpsy2rIjsC0Q&dl_branch=1)
+- [The Portal](https://open.spotify.com/show/3qv8BS1HzrgKpDnXSlYWWL?si=vVNmrl97Qju10gtF8Bw_7g&dl_branch=1)
+- [Joe Rogan](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=kRD5V830SRCvjRLpnYqjmA&dl_branch=1)
+- [Darknet Diaries](https://open.spotify.com/show/4XPl3uEEL9hvqMkoZrzbx5?si=GRpApkqjR2Omq5wP8iCGfA&dl_branch=1)
+- [Timothy Keller Sermons](https://open.spotify.com/show/5hYDVSeY9KWSpkI4YlSzKF?si=ZKWsqaewSUG90UH5a1B7tQ&dl_branch=1)
