@@ -1,7 +1,7 @@
 ---
 title: What are the different types of banks?
 description: Unravel the differences between the many types of banks. Including central, commercial, retail, corporate, investment, private, credit unions, and more!
-banner: "06 - Assets/default.jpg"
+banner: "06 - Assets/bank.jpg"
 tags: #banking
 category: banking
 type: blog
