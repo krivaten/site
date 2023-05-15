@@ -1,30 +1,34 @@
-import fs from "fs";
 import React from "react";
+import fs from "fs";
 import { GetStaticProps, GetStaticPropsResult } from "next";
 
-import { BlogsList, SimpleLayout } from "@flowershow/core";
-import clientPromise from "../lib/mddb.mjs";
-import computeFields from "../lib/computeFields";
+import Hero from "../components/Hero";
+import RecentPosts from "../components/RecentPosts";
 import type { CustomAppProps } from "./_app";
+import Head from "next/head";
+import clientPromise from "@/lib/mddb.mjs";
+import computeFields from "@/lib/computeFields";
 
-interface BlogIndexPageProps extends CustomAppProps {
-  blogs: any[]; // TODO types
+interface HomePageProps extends CustomAppProps {
+  blogs: any[];
 }
 
-export default function Blog({
-  blogs,
-  meta: { title, description },
-}: BlogIndexPageProps) {
+export default function Home({ blogs }: HomePageProps) {
   return (
-    <SimpleLayout title={title} description={description}>
-      <BlogsList blogs={blogs} />
-    </SimpleLayout>
+    <main>
+      <Head>
+        <meta
+          name="description"
+          content="A haven for resilient hearts and sharp minds. Thoughtful explorations on faith, family, and home, alongside insightful writings on software engineering."
+        />
+      </Head>
+      <Hero />
+      <RecentPosts blogs={blogs} />
+    </main>
   );
 }
 
-export const getStaticProps: GetStaticProps = async (): Promise<
-  GetStaticPropsResult<BlogIndexPageProps>
-> => {
+export const getStaticProps: GetStaticProps = async (): Promise<GetStaticPropsResult<HomePageProps>> => {
   const mddb = await clientPromise;
   const blogFiles = await mddb.getFiles({ folder: "blog" });
   const blogsMetadataPromises = blogFiles.map(async (b) => {
@@ -42,16 +46,14 @@ export const getStaticProps: GetStaticProps = async (): Promise<
   });
 
   const blogsList = await Promise.all(blogsMetadataPromises);
-
   return {
     props: {
       meta: {
-        title: "Blog posts",
-        showSidebar: false,
+        urlPath: "/",
         showToc: false,
-        showComments: false,
         showEditLink: false,
-        urlPath: "/blog",
+        showSidebar: false,
+        showComments: false,
       },
       blogs: blogsList,
     },
