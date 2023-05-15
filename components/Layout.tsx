@@ -6,10 +6,6 @@ import clsx from "clsx";
 import { useTableOfContents, collectHeadings, Nav, TableOfContents, SiteToc } from "@flowershow/core";
 import Footer from "./Footer";
 
-export interface NavItem {
-  name: string;
-  href: string;
-}
 export interface NavLink {
   name: string;
   href: string;
@@ -142,7 +138,7 @@ export const Layout: React.FC<Props> = ({ children, nav, theme, showToc, showSid
               <TableOfContents tableOfContents={tableOfContents} currentSection={currentSection} />
             </div>
           )}
-          <Footer />
+          <Footer links={nav.links} />
         </div>
       </div>
     </>

@@ -40,7 +40,7 @@ export default function Blog({ blogs, meta: { title, description } }: BlogIndexP
               <p className="font-normal tracking-tight text-2l">{blog.description}</p>
             </li>
           ) : (
-            <li className="pt-8 border-t sm:flex" key={blog.urlPath}>
+            <li className="py-8 border-t sm:flex" key={blog.urlPath}>
               <div className="flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
                 <Image className="w-full sm:w-40 h-auto rounded-md" alt="" src={banner} height={450} width={800} />
               </div>
@@ -67,7 +67,6 @@ export const getStaticProps: GetStaticProps = async (): Promise<GetStaticPropsRe
   const mddb = await clientPromise;
   const blogFiles = await mddb.getFiles({ folder: "blog" });
   const tags = await mddb.getTags();
-  console.log(tags);
   const blogsMetadataPromises = blogFiles.map(async (b) => {
     const source = fs.readFileSync(b.file_path, { encoding: "utf-8" });
 

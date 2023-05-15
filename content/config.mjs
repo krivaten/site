@@ -12,7 +12,7 @@ const config = {
     logo: "/logo.svg",
   },
   navLinks: [
-    { href: "/blog", name: "Posts" },
+    { href: "/", name: "Posts" },
     { href: "/about", name: "About" },
     { href: "/now", name: "Now" },
   ],

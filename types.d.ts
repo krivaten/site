@@ -11,3 +11,8 @@ interface IPost {
   children?: React.ReactNode;
   urlPath: string;
 }
+
+interface NavItem {
+  name: string;
+  href: string;
+}
