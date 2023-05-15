@@ -1,6 +1,6 @@
 ---
 title: My first trip
-description:
+description: An honest and unfiltered summary of my first mushroom trip, from the perspective of a devout Christian.
 banner: "06 - Assets/my-first-trip.jpg"
 tags: #pyschedelics
 category: life
