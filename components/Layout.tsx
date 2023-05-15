@@ -4,6 +4,7 @@ import { NextRouter, useRouter } from "next/router.js";
 import clsx from "clsx";
 
 import { useTableOfContents, collectHeadings, Nav, TableOfContents, SiteToc } from "@flowershow/core";
+import Footer from "./Footer";
 
 export interface NavItem {
   name: string;
@@ -98,7 +99,7 @@ export const Layout: React.FC<Props> = ({ children, nav, theme, showToc, showSid
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
-      <div className="min-h-screen bg-background dark:bg-background-dark">
+      <div className="bg-background dark:bg-background-dark">
         {/* NAVBAR */}
         <div
           className={clsx(
@@ -131,14 +132,17 @@ export const Layout: React.FC<Props> = ({ children, nav, theme, showToc, showSid
               <SiteToc currentPath={urlPath} nav={siteMap} />
             </div>
           )}
+
           {/* MAIN CONTENT & FOOTER */}
           <main className="mx-auto pt-8">{children}</main>
+
           {/** TABLE OF CONTENTS */}
           {showToc && tableOfContents.length > 0 && (
             <div className="hidden xl:block fixed z-20 w-[18rem] top-[4.6rem] bottom-0 right-[max(0px,calc(50%-44rem))] left-auto pt-8 pr-8 overflow-y-auto">
               <TableOfContents tableOfContents={tableOfContents} currentSection={currentSection} />
             </div>
           )}
+          <Footer />
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 ---
 title: Why I tried psychedelics
-description:
+description: A four and a half year journey where I learned about how psychedelics might be used to break down barriers that kept me from going deeper in my faith.
 banner: "06 - Assets/why-i-tried.jpg"
 tags: #pyschedelics
 category: life

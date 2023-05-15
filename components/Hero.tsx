@@ -8,9 +8,9 @@ export default function Hero() {
 
   useEffect(() => {
     const options = {
-      strings: ["marriage and fatherhood.", "exploring exciting ideas.", "building the local community."],
+      strings: ["family and fatherhood.", "exploring bold ideas.", "building community."],
       typeSpeed: 60,
-      backSpeed: 60,
+      backSpeed: 30,
       backDelay: 1000,
       loop: true,
     };
@@ -41,28 +41,6 @@ export default function Hero() {
               Dive into thoughtful explorations on building faith, family, and home, alongside insightful writings on
               software engineering and everyday curiosity.
             </p>
-          </div>
-          <div className="relative">
-            <img
-              src="/assets/images/obsidian_dark_new.png"
-              alt=""
-              className="relative -top-14 w-3/4 rounded-lg hidden dark:block"
-            />
-            <img
-              src="/assets/images/flowershow_dark.png"
-              alt=""
-              className=" absolute top-10 left-1/3 w-3/4 rounded-lg hidden dark:block"
-            />
-            <img
-              src="/assets/images/obsidian_light_new.png"
-              alt=""
-              className="relative -top-14 w-3/4 rounded-lg dark:hidden"
-            />
-            <img
-              src="/assets/images/flowershow_light.png"
-              alt=""
-              className=" absolute top-10 left-1/3 w-3/4 rounded-lg dark:hidden"
-            />
           </div>
         </div>
       </div>
