@@ -1,13 +1,12 @@
 import fs from "fs";
 import React from "react";
 import { GetStaticProps, GetStaticPropsResult } from "next";
+import { CldImage } from "next-cloudinary";
 
-import { BlogsList } from "@flowershow/core";
 import clientPromise from "../lib/mddb.mjs";
 import computeFields from "../lib/computeFields";
 import type { CustomAppProps } from "./_app";
 import FormattedDate from "@/components/FormattedDate";
-import Image from "next/image.js";
 import serializeBannerPath from "@/lib/serializeBannerPath";
 import Link from "next/link.js";
 import { SimpleLayout } from "@/layouts/index";
@@ -30,19 +29,27 @@ export default function Blog({ blogs, meta: { title, description } }: BlogIndexP
               </div>
               <Link
                 href={blog.urlPath}
-                className="text-3xl font-semibold tracking-tight  hover:text-primary lg:text-5xl"
+                className="text-3xl font-semibold tracking-tight hover:text-primary lg:text-5xl"
               >
                 {blog.title}
               </Link>
               <div>
-                <Image className="rounded-xl" alt="" src={banner} height={1200} width={1200} />
+                <CldImage src={banner} alt="" className="rounded-xl" width="1200" height="675" format="auto" />
               </div>
               <p className="font-normal tracking-tight text-2l">{blog.description}</p>
             </li>
           ) : (
             <li className="py-8 border-t sm:flex" key={blog.urlPath}>
               <div className="flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
-                <Image className="w-full sm:w-40 h-auto rounded-md" alt="" src={banner} height={450} width={800} />
+                <CldImage
+                  src={banner}
+                  alt=""
+                  className="w-full sm:w-40 h-auto rounded-md"
+                  width="675"
+                  height="675"
+                  crop="fill"
+                  format="auto"
+                />
               </div>
               <div className="flex flex-col gap-2">
                 <span className="text-sm text-trueGray-400">

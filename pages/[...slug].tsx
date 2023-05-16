@@ -9,7 +9,8 @@ import clientPromise from "../lib/mddb.mjs";
 import computeFields from "../lib/computeFields";
 import parse from "../lib/markdown";
 import type { CustomAppProps } from "./_app";
-import siteConfig from "../config/siteConfig";
+import { CldOgImage } from "next-cloudinary";
+import serializeBannerPath from "@/lib/serializeBannerPath";
 
 interface SlugPageProps extends CustomAppProps {
   source: any;
@@ -18,43 +19,18 @@ interface SlugPageProps extends CustomAppProps {
 export default function Page({ source, meta }: SlugPageProps) {
   source = JSON.parse(source);
 
-  const seoImages = (() => {
-    // if page has specific image set
-    if (meta.image) {
-      return [
-        {
-          url: meta.image.startsWith("http")
-            ? meta.image
-            : `${siteConfig.domain}${meta.image}`,
-          width: 1200,
-          height: 627,
-          alt: meta.title,
-        },
-      ];
-    }
-    // otherwise return default images array set in config file
-    return siteConfig.nextSeo?.openGraph?.images || [];
-  })();
+  const banner = meta.banner ? serializeBannerPath(meta) : null;
 
   return (
     <>
-      <NextSeo
-        title={meta.title}
-        description={meta.description}
-        openGraph={{
-          title: meta.title,
-          description: meta.description,
-          images: seoImages,
-        }}
-      />
+      <NextSeo title={meta.title} description={meta.description} />
+      <CldOgImage src={banner} alt={meta.description} twitterTitle={meta.title} format="auto" />
       <MdxPage source={source} frontMatter={meta} />
     </>
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({
-  params,
-}): Promise<GetStaticPropsResult<SlugPageProps>> => {
+export const getStaticProps: GetStaticProps = async ({ params }): Promise<GetStaticPropsResult<SlugPageProps>> => {
   const urlPath = params?.slug ? (params.slug as string[]).join("/") : "/";
 
   const mddb = await clientPromise;
@@ -149,10 +125,7 @@ function addPageToSitemap(page: any, sitemap: Array<NavGroup | NavItem>) {
 
       const matchingGroup = currArray
         .filter(isNavGroup)
-        .find(
-          (group) =>
-            group.path !== undefined && page.url_path.startsWith(group.path)
-        );
+        .find((group) => group.path !== undefined && page.url_path.startsWith(group.path));
       if (!matchingGroup) {
         const newGroup: NavGroup = {
           name: capitalize(urlParts[level]),

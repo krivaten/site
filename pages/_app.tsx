@@ -16,7 +16,7 @@ import "../styles/prism.css";
 import { Layout } from "@/components/Layout";
 
 export interface CustomAppProps {
-  meta: {
+  meta: Partial<IPost> & {
     showToc: boolean;
     showEditLink: boolean;
     showSidebar: boolean;

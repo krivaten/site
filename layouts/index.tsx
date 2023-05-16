@@ -7,6 +7,7 @@ import {
 } from "@flowershow/core";
 import serializeBannerPath from "../lib/serializeBannerPath";
 import { Container } from "@/components/Container";
+import { CldImage } from "next-cloudinary";
 
 interface Props extends IPost {}
 
@@ -41,7 +42,7 @@ export const BlogLayout: React.FC<Props> = ({ children, ...frontMatter }) => {
               <FormattedDate post={frontMatter} />
             </p>
           )}
-          {banner && <img src={banner} className="" />}
+          {banner && <CldImage src={banner} alt="" className="rounded-md" width="1200" height="675" format="auto" />}
         </div>
       </header>
       <section>{children}</section>
