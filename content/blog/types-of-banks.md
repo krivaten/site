@@ -22,7 +22,7 @@ For me, it'll help me make sense of some of the jargon tossed around in meetings
 
 ## Types of Banks
 ### Central Banks
-In the United States, this is our nation's primary authority, known as the Federal Reserve. They are responsible for the monetary policy of the country, which includes tasks like like distributing currency, managing interest rates, and regulating commercial banks.
+In the United States, this is our nation's primary economic authority, known as the Federal Reserve. They are responsible for the monetary policy of the country, which includes tasks like distributing currency, managing interest rates, economic research, and regulating commercial banks.
 
 ### Commercial Banks
 These are the name-brand banks we're all familiar with (e.g., JPMorgan Chase, Bank of America, Wells Fargo, etc.). They serve the basic needs of most businesses and people by offering a robust list of services like checking accounts, savings accounts, loans, mortgages, credit cards, merchant services, cash management, lines of credit, business credit cards, and more. As such, they are the most common type of bank.
@@ -34,12 +34,12 @@ This is another term for your typical bank, but it primarily focuses on the indi
 As the name implies, these banks specifically work with businesses of various sizes. While providing standard services like loans, credit, and cash management, they may also help with equipment lending and financing.
 
 ### Investment Banks
-An investment bank primarily works with businesses and governments to provide financial services. These services include things like managing the issuing, purchasing, and trading of securities, as well as raising capital and providing counsel. 
+An investment bank primarily works with businesses and governments to provide financial services. These services include things like raising capital and providing counsel; but also includes managing the issuing, purchasing, and trading of securities. 
 
-Securities are things like stocks, bonds, mutual funds, exchange-traded funds (ETFs), options, and derivatives. Goldman Sachs, Morgan Stanley, and Merrill Lynch are all examples of investment banks.
+Securities is a blanket term that includes stocks, bonds, mutual funds, exchange-traded funds (ETFs), options, and derivatives. Goldman Sachs, Morgan Stanley, and Merrill Lynch are all examples of investment banks.
 
 ### Private Banks
-Reserved for those with a high net worth, private banks cater to individuals with a lot of money the bank can invest. Think of this as the white-glove experience in banking.
+Private banks are financial institutions that provide specialized services to high-net-worth individuals and families. They offer a wide range of services, including investment management, trust and estate planning, and tax planning. Private banks typically have higher account minimums than traditional banks, and they offer more personalized service.
 
 ### Credit Unions
 These operate as non-profit organizations that provide many of the same services as commercial or retail banks. However, because they have no shareholders to disburse their earnings to, they can reinvest that money into the bank and offer better services, rates, and lower fees to their members.
