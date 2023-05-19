@@ -42,7 +42,7 @@ Securities is a blanket term that includes stocks, bonds, mutual funds, exchange
 Private banks are financial institutions that provide specialized services to high-net-worth individuals and families. They offer a wide range of services, including investment management, trust and estate planning, and tax planning. Private banks typically have higher account minimums than traditional banks, and they offer more personalized service.
 
 ### Credit Unions
-These operate as non-profit organizations that provide many of the same services as commercial or retail banks. However, because they have no shareholders to disburse their earnings to, they can reinvest that money into the bank and offer better services, rates, and lower fees to their members.
+These operate as non-profit organizations that provide many of the same services as commercial or retail banks. However, because they have no shareholders to share their earnings with, they can reinvest that money into the bank and offer better services, rates, and lower fees to their members.
 
 ### Online Banks
 Here are banks that function exclusively online, with no physical branches. As a result, they can offer most of the standard services like checking accounts, savings accounts, and loans while also providing convenient perks that, for their members, make up for the lack of face-to-face contact. Examples of online banks include Ally and Chime.

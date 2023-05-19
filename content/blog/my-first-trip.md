@@ -1,5 +1,5 @@
 ---
-title: My first trip
+title: My first psychedelic trip
 description: An honest and unfiltered summary of my first mushroom trip, from the perspective of a devout Christian.
 banner: "06 - Assets/my-first-trip.jpg"
 tags: #pyschedelics
