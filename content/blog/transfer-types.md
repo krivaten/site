@@ -1,5 +1,5 @@
 ---
-title: Banking Basics - A Guide to the Transaction Types
+title: Banking Basics - A Guide to Transfer Types
 description: Unravel the various way you can transfer funds in the digital age and empower yourself with valuable financial knowledge.
 banner: "06 - Assets/transfer-types.jpg"
 tags: #banking
