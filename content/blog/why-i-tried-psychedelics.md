@@ -1,14 +1,17 @@
 ---
 title: Why I tried psychedelics
-description: A four and a half year journey where I learned about how psychedelics might be used to break down barriers that kept me from going deeper in my faith.
-banner: "06 - Assets/why-i-tried.jpg"
-tags: #pyschedelics
-category: life
+description: A four and a half year journey where I learned about how
+  psychedelics might be used to break down barriers that kept me from going
+  deeper in my faith.
+banner: 06 - Assets/why-i-tried.jpg
+tags:
+  - pyschedelics
 type: blog
 publish: true
-created: 2021-07-02
+date: 2021-07-02
 updated: 2023-05-11
 ---
+
 
 One Wednesday night in the late nineties, I was at a high school Bible study in Riverside, CA. There was a guest speaker there who gave a beautiful and inspiring message that then wrapped up with an open-ended prayer session.
 
