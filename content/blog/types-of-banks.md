@@ -1,14 +1,17 @@
 ---
 title: Banking Basics - A Guide to the Different Types of Banks
-description: Unravel the differences between the many types of banks. Including central, commercial, retail, corporate, investment, private, credit unions, and more!
-banner: "06 - Assets/bank.jpg"
-tags: #banking
-category: banking
+description: Unravel the differences between the many types of banks. Including
+  central, commercial, retail, corporate, investment, private, credit unions,
+  and more!
+banner: 06 - Assets/bank.jpg
+tags:
+  - banking
 type: blog
 publish: true
-created: 2023-05-14
-updated: 
+date: 2023-05-14
+updated: null
 ---
+
 
 Have you ever walked down the street in any town bigger than a few square blocks and been surprised by how many financial institutions you passed by? You're not alone. Living in a small town, I frequently come across another one I hadn't noticed before, each time wondering things like:
 
