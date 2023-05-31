@@ -5,6 +5,7 @@ import clsx from "clsx";
 
 import { useTableOfContents, collectHeadings, Nav, TableOfContents, SiteToc } from "@flowershow/core";
 import Footer from "./Footer";
+import Header from "./Header";
 
 export interface NavLink {
   name: string;
@@ -99,25 +100,12 @@ export const Layout: React.FC<Props> = ({ children, nav, theme, showToc, showSid
         {/* NAVBAR */}
         <div
           className={clsx(
-            "sticky top-0 z-50 w-full",
-            isScrolled
-              ? "dark:bg-background-dark/95 bg-background/95 backdrop-blur [@supports(backdrop-filter:blur(0))]:dark:bg-background-dark/75"
-              : "dark:bg-background-dark bg-background"
+            "sticky top-0 z-50 w-full p-4 md:px-0 dark:bg-background-dark/75 bg-background/75 backdrop-blur"
           )}
         >
-          <div className="max-w-8xl mx-auto p-4 md:px-8">
-            <Nav
-              title={nav.title}
-              logo={nav.logo}
-              links={nav.links}
-              social={nav.social}
-              defaultTheme={theme.defaultTheme}
-              themeToggleIcon={theme.themeToggleIcon}
-            >
-              {showSidebar && <SiteToc currentPath={urlPath} nav={siteMap} />}
-            </Nav>
-          </div>
+          <Header title={nav.title} links={nav.links} />
         </div>
+
         {/* wrapper for sidebar, main content and ToC */}
         <div
           className={clsx("max-w-8xl mx-auto px-4 md:px-8", showSidebar && "lg:ml-[18rem]", showToc && "xl:mr-[18rem]")}

@@ -2,6 +2,7 @@ import fs from "fs";
 import React from "react";
 import { GetStaticProps, GetStaticPropsResult } from "next";
 import { CldImage } from "next-cloudinary";
+import sortBy from "lodash/sortBy";
 
 import clientPromise from "../lib/mddb.mjs";
 import computeFields from "../lib/computeFields";
@@ -73,8 +74,10 @@ export default function Blog({ blogs, meta: { title, description } }: BlogIndexP
 export const getStaticProps: GetStaticProps = async (): Promise<GetStaticPropsResult<BlogIndexPageProps>> => {
   const mddb = await clientPromise;
   const blogFiles = await mddb.getFiles({ folder: "blog" });
+  const sortedBlogFiles = sortBy(blogFiles, (b) => b.metadata?.date).reverse();
   const tags = await mddb.getTags();
-  const blogsMetadataPromises = blogFiles.map(async (b) => {
+
+  const blogsMetadataPromises = sortedBlogFiles.map(async (b) => {
     const source = fs.readFileSync(b.file_path, { encoding: "utf-8" });
 
     // TODO temporary replacement for contentlayer's computedFields
