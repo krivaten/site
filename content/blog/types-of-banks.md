@@ -13,15 +13,11 @@ updated: null
 ---
 
 
-Have you ever walked down the street in any town bigger than a few square blocks and been surprised by how many financial institutions you passed by? You're not alone. Living in a small town, I frequently come across another one I hadn't noticed before, each time wondering things like:
+I've worked in banking for a few years now. But even so, I still find myself amazed by how many financial institutions I come across while walking or driving around town. 
 
-- Why are there so many and seemingly different kinds?
-- Why are some really nice but always seem empty?
-- Why would I choose one over another? 
+Why are there so many? Why are some really nice, but always look empty? What is the difference between each one?
 
-So I sat down and did some research to help answer these questions. While the answers I got were more complex than I imagined, in this post, I will highlight the primary differences and some similarities between all the different types you might come across.
-
-For me, it'll help me make sense of some of the jargon tossed around in meetings. For you, it could help land you a new job. It might even be mine! Let's go!
+By now, I felt it was long overdue that I answer these questions so that I could be a more useful member of my team. While the results I got were more complex than I expected, in this post, I will highlight what sets the most common types apart from each other. Let's dig in!
 
 ## Types of Banks
 ### Central Banks
