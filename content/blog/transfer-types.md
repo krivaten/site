@@ -1,14 +1,16 @@
 ---
 title: Banking Basics - A Guide to Transfer Types
-description: Unravel the various way you can transfer funds in the digital age and empower yourself with valuable financial knowledge.
-banner: "06 - Assets/transfer-types.jpg"
-tags: #banking
-category: banking
+description: Unravel the various way you can transfer funds in the digital age
+  and empower yourself with valuable financial knowledge.
+banner: 06 - Assets/transfer-types.jpg
+tags:
+  - banking
 type: blog
 publish: true
-created: 2023-05-24
-updated: 
+date: 2023-05-24
+updated: null
 ---
+
 
 In the world of banking, a transfer isn't just a transfer. There's an entire ecosystem of various types, each with its own unique mechanisms, benefits, and use-cases. From Automated Clearing House (ACH) transfers and wire transfers to cashier's checks and person-to-person (P2P) payments, the landscape of bank transfers is more diverse than you may have initially expected.
 
