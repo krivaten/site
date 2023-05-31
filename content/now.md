@@ -4,8 +4,8 @@ description:
 banner: "06 - Assets/default.jpg"
 tags:
 publish: true
-created: 2018-06-01
-updated: 2023-05-10
+date: 2018-06-01
+updated: 2022-05-10
 ---
 
 Colorado is still going great, but it's hard to believe it's already been a year! We've fallen back in with our good friends and the community is outstanding.
