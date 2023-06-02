@@ -2,9 +2,10 @@
 title: My first psychedelic trip
 description: An honest and unfiltered summary of my first mushroom trip, from the perspective of a devout Christian.
 banner: "06 - Assets/my-first-trip.jpg"
-tags: [pyschedelics]
+tags:
+  - pyschedelics
 type: blog
-publish: false
+publish: true
 date: 2022-05-27
 updated: 2022-11-15
 ---
