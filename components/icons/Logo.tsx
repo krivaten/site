@@ -1,8 +1,6 @@
-import * as React from "react";
-import { SVGProps } from "react";
-
-const Logo = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 480 480" aria-hidden="true" {...props}>
+import { Icon, IconProps } from "@chakra-ui/react";
+const Logo = (props: IconProps) => (
+  <Icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 480 480" aria-hidden="true" {...props}>
     <g clipPath="url(#a)">
       <path
         fill="url(#b)"
@@ -23,6 +21,6 @@ const Logo = (props: SVGProps<SVGSVGElement>) => (
         <path fill="#fff" d="M0 0h480v480H0z" />
       </clipPath>
     </defs>
-  </svg>
+  </Icon>
 );
 export default Logo;

@@ -3,7 +3,6 @@ import React from "react";
 import { NextSeo } from "next-seo";
 import { GetStaticProps, GetStaticPaths, GetStaticPropsResult } from "next";
 import { NavItem, NavGroup } from "@flowershow/core";
-
 import MdxPage from "../components/MdxPage";
 import clientPromise from "../lib/mddb.mjs";
 import computeFields from "../lib/computeFields";
@@ -18,7 +17,6 @@ interface SlugPageProps extends CustomAppProps {
 
 export default function Page({ source, meta }: SlugPageProps) {
   source = JSON.parse(source);
-
   const banner = meta.banner ? serializeBannerPath(meta) : null;
 
   return (

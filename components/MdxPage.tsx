@@ -2,7 +2,11 @@ import React from "react";
 import { MDXRemote } from "next-mdx-remote";
 import { Mermaid, Pre } from "@flowershow/core";
 
-import layouts from "../layouts";
+import { Prose } from "@nikolovlazar/chakra-ui-prose";
+import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { CldImage } from "next-cloudinary";
+import serializeBannerPath from "@/lib/serializeBannerPath";
+import FormattedDate from "./FormattedDate";
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -14,19 +18,28 @@ const components = {
 };
 
 export default function MdxPage({ source, frontMatter }) {
-  const Layout = ({ children }) => {
-    if (frontMatter.layout) {
-      const LayoutComponent = layouts[frontMatter.layout];
-      return <LayoutComponent {...frontMatter}>{children}</LayoutComponent>;
-    }
-    return <>{children}</>;
-  };
-
+  const { title, date } = frontMatter;
+  const banner = serializeBannerPath(frontMatter);
   return (
-    <main id="mdxpage" className="prose mx-auto">
-      <Layout>
+    <Container as="article" maxW={"2xl"} p={4}>
+      <Box as="header" mb={4}>
+        <Heading as="h1" size="4xl">
+          {title}
+        </Heading>
+        {date && (
+          <Text as="p" color={"gray.500"} fontSize="sm" mt={2} fontStyle={"italic"}>
+            <FormattedDate post={frontMatter} />
+          </Text>
+        )}
+        {banner && (
+          <Box mt={5} borderRadius="lg" overflow="hidden">
+            <CldImage src={banner} alt="" width="1200" height="675" format="auto" />
+          </Box>
+        )}
+      </Box>
+      <Prose>
         <MDXRemote {...source} components={components} />
-      </Layout>
-    </main>
+      </Prose>
+    </Container>
   );
 }

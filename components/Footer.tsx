@@ -1,47 +1,60 @@
-import Link from "next/link";
-import GitHubIcon from "./icons/GitHubIcon";
+import { Box, Button, chakra, Container, Link, Stack, Text, useColorModeValue, VisuallyHidden } from "@chakra-ui/react";
+import { ReactNode } from "react";
 import TwitterIcon from "./icons/TwitterIcon";
+import GitHubIcon from "./icons/GitHubIcon";
+import Logo from "./icons/Logo";
 
-const Footer: React.FC<{ links: NavItem[] }> = ({ links }) => {
+const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
   return (
-    <footer>
-      <div className="px-5 py-12 mx-auto border-t max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-20">
-        <div className="flex justify-center mb-8 space-x-6 md:order-last md:mb-0">
-          <a
-            href="https://twitter.com/krivaten"
-            className="text-gray-400 hover:text-gray-500"
-            target="_blank"
-            rel="external nofollow"
-          >
-            <span className="sr-only">Twitter</span>
-            <TwitterIcon className="w-6 h-6" />
-          </a>
-
-          <a
-            href="https://github.com/krivaten"
-            className="text-gray-400 hover:text-gray-500"
-            target="_blank"
-            rel="external nofollow"
-          >
-            <span className="sr-only">GitHub</span>
-            <GitHubIcon className="w-6 h-6" />
-          </a>
-        </div>
-        <ul className="flex justify-center space-x-6 md:order-2">
-          {links.map((link) => (
-            <li key={link.name}>
-              <Link href={link.href} className="text-trueGray-500 hover:text-trueGray-500">
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-sm text-center text-trueGray-500">Copyright © {new Date().getFullYear()} Krivaten</p>
-        </div>
-      </div>
-    </footer>
+    <Button
+      w={8}
+      h={8}
+      cursor={"pointer"}
+      as={"a"}
+      href={href}
+      target="_blank"
+      bg="transparent"
+      _hover={{ bg: "transparent" }}
+    >
+      <VisuallyHidden>{label}</VisuallyHidden>
+      {children}
+    </Button>
   );
 };
 
-export default Footer;
+export default function Footer() {
+  return (
+    <Box bg={useColorModeValue("gray.50", "gray.900")} color={useColorModeValue("gray.700", "gray.200")}>
+      <Container as={Stack} maxW={"6xl"} py={4} spacing={4} justify={"center"} align={"center"}>
+        <Logo width={"20"} height={"20"} />
+        <Stack direction={"row"} spacing={6}>
+          <Link href={"/"}>Posts</Link>
+          <Link href={"/about"}>About</Link>
+          <Link href={"/now"}>Now</Link>
+        </Stack>
+      </Container>
+
+      <Box borderTopWidth={1} borderStyle={"solid"} borderColor={useColorModeValue("gray.200", "gray.700")}>
+        <Container
+          as={Stack}
+          maxW={"6xl"}
+          py={4}
+          direction={{ base: "column", md: "row" }}
+          spacing={4}
+          justify={{ base: "center", md: "space-between" }}
+          align={{ base: "center", md: "center" }}
+        >
+          <Text>&copy; {new Date().getFullYear()} Krivaten. All rights reserved</Text>
+          <Stack direction={"row"} spacing={6}>
+            <SocialButton label={"Twitter"} href={"https://twitter.com/krivaten"}>
+              <TwitterIcon width="6" height="6" />
+            </SocialButton>
+            <SocialButton label={"GitHub"} href={"https://github.com/krivaten"}>
+              <GitHubIcon width="6" height="6" />
+            </SocialButton>
+          </Stack>
+        </Container>
+      </Box>
+    </Box>
+  );
+}

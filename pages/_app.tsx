@@ -10,10 +10,14 @@ import siteConfig from "../config/siteConfig";
 import { SearchProvider, pageview, ThemeProvider, NavItem, NavGroup } from "@flowershow/core";
 
 import "tailwindcss/tailwind.css";
-import "../styles/docsearch.css";
 import "../styles/global.css";
+import "../styles/docsearch.css";
 import "../styles/prism.css";
-import { Layout } from "@/components/Layout";
+import Header from "@/components/Header";
+import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react";
+import Footer from "@/components/Footer";
+import { CacheProvider } from "@chakra-ui/next-js";
+import { withProse } from "@nikolovlazar/chakra-ui-prose";
 
 export interface CustomAppProps {
   meta: Partial<IPost> & {
@@ -72,6 +76,19 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
     }
   }, [router.events]);
 
+  const theme = extendTheme(
+    {
+      fonts: {
+        body: "'Inter', sans-serif",
+        heading: "'Inter', sans-serif",
+      },
+      styles: {
+        global: {},
+      },
+    },
+    withProse()
+  );
+
   return (
     <ThemeProvider
       disableTransitionOnChange
@@ -80,33 +97,16 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
       forcedTheme={siteConfig.theme.default ? null : "light"}
     >
       <DefaultSeo defaultTitle={siteConfig.title} {...siteConfig.nextSeo} />
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
-      {siteConfig.analytics && (
-        <>
-          <Script
-            strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics}`}
-          />
-          <Script
-            id="gtag-init"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${siteConfig.analytics}', {
-                page_path: window.location.pathname,
-              });
-            `,
-            }}
-          />
-        </>
-      )}
       <SearchProvider searchConfig={siteConfig.search}>
-        <Layout {...layoutProps}>
-          <Component {...pageProps} />
-        </Layout>
+        <CacheProvider>
+          <ChakraProvider theme={theme}>
+            <Header />
+            <Box as="main" mt={5}>
+              <Component {...pageProps} />
+            </Box>
+            <Footer />
+          </ChakraProvider>
+        </CacheProvider>
       </SearchProvider>
     </ThemeProvider>
   );

@@ -1,5 +1,3 @@
-@import "@flowershow/remark-callouts/styles.css";
-
 .nav-logo {
   height: 2.25rem;
 }
@@ -36,14 +34,14 @@ html {
 }
 
 /* :not(.unstyled) :is(h2, h3, h4, h5, h6):not(.blogitem-title) { */
-#mdxpage :is(h2, h3, h4, h5, h6) {
+:is(h2, h3, h4, h5, h6) {
   margin-left: -2rem !important;
   padding-left: 2rem !important;
   scroll-margin-top: 4.5rem;
   position: relative;
 }
 
-#mdxpage .heading-link {
+.heading-link {
   padding: 1px;
   position: absolute;
   left: 0;
@@ -51,27 +49,26 @@ html {
   transform: translateY(-50%);
   margin: auto 0;
   border-radius: 5px;
-  background: #1e293b;
   opacity: 0;
   transition: opacity 0.2s;
 }
 
-#mdx-page .light .heading-link {
+.light .heading-link {
   /* border: 1px solid #ab2b65; */
   /* background: none; */
   background: #e2e8f0;
 }
 
-#mdxpage :is(h2, h3, h4, h5, h6):hover .heading-link {
+:is(h2, h3, h4, h5, h6):hover .heading-link {
   opacity: 100;
 }
 
-#mdxpage .heading-link svg {
+.heading-link svg {
   transform: scale(0.75);
 }
 
 @media screen and (max-width: 640px) {
-  #mdxpage .heading-link {
+  .heading-link {
     visibility: hidden;
   }
 }
