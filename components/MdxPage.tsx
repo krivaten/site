@@ -23,11 +23,11 @@ export default function MdxPage({ source, frontMatter }) {
   return (
     <Container as="article" maxW={"2xl"} p={4}>
       <Box as="header" mb={4}>
-        <Heading as="h1" size="4xl">
+        <Heading as="h1" size={{ base: "xl", md: "2xl" }}>
           {title}
         </Heading>
         {date && (
-          <Text as="p" color={"gray.500"} fontSize="sm" mt={2} fontStyle={"italic"}>
+          <Text as="p" color={"gray.500"} fontSize="sm" mt={5} fontStyle={"italic"}>
             <FormattedDate post={frontMatter} />
           </Text>
         )}

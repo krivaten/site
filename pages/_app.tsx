@@ -1,22 +1,19 @@
 import React from "react";
 /* eslint import/no-default-export: off */
-import Script from "next/script";
 import { DefaultSeo } from "next-seo";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import type { AppProps } from "next/app";
 
 import siteConfig from "../config/siteConfig";
-import { SearchProvider, pageview, ThemeProvider, NavItem, NavGroup } from "@flowershow/core";
+import { SearchProvider, pageview, NavItem, NavGroup } from "@flowershow/core";
 
-import "tailwindcss/tailwind.css";
 import "../styles/global.css";
 import "../styles/docsearch.css";
 import "../styles/prism.css";
 import Header from "@/components/Header";
 import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Footer from "@/components/Footer";
-import { CacheProvider } from "@chakra-ui/next-js";
 import { withProse } from "@nikolovlazar/chakra-ui-prose";
 
 export interface CustomAppProps {
@@ -86,29 +83,35 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
         global: {},
       },
     },
-    withProse()
+    withProse({
+      baseStyle: {
+        "iframe[src*='youtube.com']": {
+          aspectRatio: "16/9",
+          width: "100%",
+          height: "auto",
+          border: "none",
+        },
+        a: {
+          color: "orange.500",
+          fontWeight: "semibold",
+        },
+      },
+    })
   );
 
   return (
-    <ThemeProvider
-      disableTransitionOnChange
-      attribute="class"
-      defaultTheme={siteConfig.theme.default}
-      forcedTheme={siteConfig.theme.default ? null : "light"}
-    >
+    <>
       <DefaultSeo defaultTitle={siteConfig.title} {...siteConfig.nextSeo} />
       <SearchProvider searchConfig={siteConfig.search}>
-        <CacheProvider>
-          <ChakraProvider theme={theme}>
-            <Header />
-            <Box as="main" mt={5}>
-              <Component {...pageProps} />
-            </Box>
-            <Footer />
-          </ChakraProvider>
-        </CacheProvider>
+        <ChakraProvider theme={theme}>
+          <Header />
+          <Box as="main" mt={5}>
+            <Component {...pageProps} />
+          </Box>
+          <Footer />
+        </ChakraProvider>
       </SearchProvider>
-    </ThemeProvider>
+    </>
   );
 };
 
