@@ -1,12 +1,10 @@
 import React from "react";
 /* eslint import/no-default-export: off */
 import { DefaultSeo } from "next-seo";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 import type { AppProps } from "next/app";
 
 import siteConfig from "../config/siteConfig";
-import { SearchProvider, pageview, NavItem, NavGroup } from "@flowershow/core";
+import { SearchProvider, NavItem, NavGroup } from "@flowershow/core";
 
 import "../styles/global.css";
 import "../styles/docsearch.css";
@@ -30,8 +28,36 @@ export interface CustomAppProps {
   [key: string]: any;
 }
 
+export const theme = extendTheme(
+  {
+    config: {
+      initialColorMode: "light",
+    },
+    fonts: {
+      body: "'Inter', sans-serif",
+      heading: "'Inter', sans-serif",
+    },
+    styles: {
+      global: {},
+    },
+  },
+  withProse({
+    baseStyle: {
+      "iframe[src*='youtube.com']": {
+        aspectRatio: "16/9",
+        width: "100%",
+        height: "auto",
+        border: "none",
+      },
+      a: {
+        color: "orange.500",
+        fontWeight: "semibold",
+      },
+    },
+  })
+);
+
 const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
-  const router = useRouter();
   const { meta, siteMap } = pageProps;
 
   const layoutProps = {
@@ -60,44 +86,6 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
     },
     siteMap,
   };
-
-  useEffect(() => {
-    if (siteConfig.analytics) {
-      const handleRouteChange = (url) => {
-        pageview(url);
-      };
-      router.events.on("routeChangeComplete", handleRouteChange);
-      return () => {
-        router.events.off("routeChangeComplete", handleRouteChange);
-      };
-    }
-  }, [router.events]);
-
-  const theme = extendTheme(
-    {
-      fonts: {
-        body: "'Inter', sans-serif",
-        heading: "'Inter', sans-serif",
-      },
-      styles: {
-        global: {},
-      },
-    },
-    withProse({
-      baseStyle: {
-        "iframe[src*='youtube.com']": {
-          aspectRatio: "16/9",
-          width: "100%",
-          height: "auto",
-          border: "none",
-        },
-        a: {
-          color: "orange.500",
-          fontWeight: "semibold",
-        },
-      },
-    })
-  );
 
   return (
     <>

@@ -3,7 +3,6 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Icon,
@@ -14,12 +13,17 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  useColorMode,
+  Button,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import Logo from "./icons/Logo";
+import MoonIcon from "./icons/MoonIcon";
+import SunIcon from "./icons/SunIcon";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Box>
@@ -55,8 +59,11 @@ export default function Header() {
             </Flex>
           </Link>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display={{ base: "none", md: "flex" }} ml={10} alignItems={"center"}>
             <DesktopNav />
+            <Button onClick={toggleColorMode} bg="transparent" _hover={{ bg: "transparent" }}>
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button>
           </Flex>
         </Flex>
       </Flex>
