@@ -9,10 +9,6 @@ date: 2023-01-06
 updated: 2023-05-11
 ---
 
-Links: [[Quick|Quick]]
-
----
-
 # Testing features
 
 This is a test document for testing all the possible Markdown features that this site may encounter.
@@ -31,8 +27,8 @@ We got some **bold text**, some _italic text_, and some ~~strikethrough text~~.
 
 ## Links
 
-- [[../my-first-trip|my-first-trip]]
-- [[../my-first-trip|Custom Name]]
+- [[my-first-trip|my-first-trip]]
+- [[my-first-trip|Custom Name]]
 - [External Link](https://google.com)
 
 ## Lists
@@ -53,7 +49,7 @@ We got some **bold text**, some _italic text_, and some ~~strikethrough text~~.
 
 ![[04 - Published/assets/bug.jpeg|04 - Published/assets/bug.jpeg]]
 
-![[./code.jpeg|Sample alt tag]]
+![[code.jpeg|Sample alt tag]]
 ## Videos
 
 <iframe src="https://www.youtube.com/embed/sCkWsAAwpF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
