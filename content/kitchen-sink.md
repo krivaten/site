@@ -27,7 +27,7 @@ We got some **bold text**, some _italic text_, and some ~~strikethrough text~~.
 
 ## Links
 
-- [[my-first-trip]]
+- [[my-first-trip|my-first-trip]]
 - [[my-first-trip|Custom Name]]
 - [External Link](https://google.com)
 
@@ -47,7 +47,7 @@ We got some **bold text**, some _italic text_, and some ~~strikethrough text~~.
 
 ## Images
 
-![[04 - Published/assets/bug.jpeg]]
+![[04 - Published/assets/bug.jpeg|04 - Published/assets/bug.jpeg]]
 
 ![[code.jpeg|Sample alt tag]]
 ## Videos
