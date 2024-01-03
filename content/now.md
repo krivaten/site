@@ -1,12 +1,13 @@
 ---
 title: Now
-description:
-banner: "06 - Assets/default.jpg"
-tags:
+description: 
+banner: 06 - Assets/default.jpg
+tags: 
 publish: true
 date: 2018-06-01
 updated: 2022-05-10
 ---
+
 
 Colorado is still going great, but it's hard to believe it's already been a year! We've fallen back in with our good friends and the community is outstanding.
 
@@ -30,15 +31,14 @@ Here are some things that have been adding value or impact to my life lately:
 - [Simulation Theory](https://www.simulation-argument.com/simulation.html)
 - [Stoicism](https://dailystoic.com/what-is-stoicism-a-definition-3-stoic-exercises-to-get-you-started/)
 - Homesteading, Gardening, Hydroponics, and Mycology
-- Social Climate Change
+- Special needs community
 
 ### Top five people
 
 - [Akira the Don](https://www.akirathedon.com/)
-- [Eric Weinstein](https://theportal.wiki/wiki/Main_Page)
 - Jordan Peterson
-- Brett Weinstein
-- Heather Heyig
+- Joe Rogan
+- Andrew Huberman
 - Lex Fridman
 
 ### Top five recent books
