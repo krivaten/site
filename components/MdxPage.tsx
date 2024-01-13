@@ -1,9 +1,6 @@
 import React from "react";
 import { MDXRemote } from "next-mdx-remote";
 import { Mermaid, Pre } from "@flowershow/core";
-
-import { Prose } from "@nikolovlazar/chakra-ui-prose";
-import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import { CldImage } from "next-cloudinary";
 import serializeBannerPath from "@/lib/serializeBannerPath";
 import FormattedDate from "./FormattedDate";
@@ -21,25 +18,28 @@ export default function MdxPage({ source, frontMatter }) {
   const { title, date } = frontMatter;
   const banner = serializeBannerPath(frontMatter);
   return (
-    <Container as="article" maxW={"2xl"} p={4}>
-      <Box as="header" mb={4}>
-        <Heading as="h1" size={{ base: "xl", md: "2xl" }}>
+    <div className="bg-white px-6 py-32 lg:px-8">
+      <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           {title}
-        </Heading>
-        {date && (
-          <Text as="p" color={"gray.500"} fontSize="sm" mt={5} fontStyle={"italic"}>
-            <FormattedDate post={frontMatter} />
-          </Text>
-        )}
+        </h1>
+        <p className="mt-6 text-md leading-8">
+          <FormattedDate post={frontMatter} />
+        </p>
         {banner && (
-          <Box mt={5} borderRadius="lg" overflow="hidden">
-            <CldImage src={banner} alt="" width="1200" height="675" format="auto" />
-          </Box>
+          <CldImage
+            src={banner}
+            alt=""
+            width="1200"
+            height="675"
+            format="auto"
+            className="mt-6 rounded-lg sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:w-full lg:h-96"
+          />
         )}
-      </Box>
-      <Prose>
-        <MDXRemote {...source} components={components} />
-      </Prose>
-    </Container>
+        <div className="mt-10 max-w-2xl prose">
+          <MDXRemote {...source} components={components} />
+        </div>
+      </div>
+    </div>
   );
 }

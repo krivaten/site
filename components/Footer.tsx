@@ -1,60 +1,41 @@
-import { Box, Button, chakra, Container, Link, Stack, Text, useColorModeValue, VisuallyHidden } from "@chakra-ui/react";
-import { ReactNode } from "react";
-import TwitterIcon from "./icons/TwitterIcon";
 import GitHubIcon from "./icons/GitHubIcon";
-import Logo from "./icons/Logo";
+import TwitterIcon from "./icons/TwitterIcon";
 
-const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
+const navigation = [
+  {
+    name: "X",
+    href: "https://x.com/krivaten",
+    icon: (props) => <TwitterIcon {...props} />,
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/krivaten",
+    icon: (props) => <GitHubIcon {...props} />,
+  },
+];
+
+export default function Example() {
   return (
-    <Button
-      w={8}
-      h={8}
-      cursor={"pointer"}
-      as={"a"}
-      href={href}
-      target="_blank"
-      bg="transparent"
-      _hover={{ bg: "transparent" }}
-    >
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </Button>
-  );
-};
-
-export default function Footer() {
-  return (
-    <Box bg={useColorModeValue("gray.50", "gray.900")} color={useColorModeValue("gray.700", "gray.200")}>
-      <Container as={Stack} maxW={"6xl"} py={4} spacing={4} justify={"center"} align={"center"}>
-        <Logo width={"20"} height={"20"} />
-        <Stack direction={"row"} spacing={6}>
-          <Link href={"/"}>Posts</Link>
-          <Link href={"/about"}>About</Link>
-          <Link href={"/now"}>Now</Link>
-        </Stack>
-      </Container>
-
-      <Box borderTopWidth={1} borderStyle={"solid"} borderColor={useColorModeValue("gray.200", "gray.700")}>
-        <Container
-          as={Stack}
-          maxW={"6xl"}
-          py={4}
-          direction={{ base: "column", md: "row" }}
-          spacing={4}
-          justify={{ base: "center", md: "space-between" }}
-          align={{ base: "center", md: "center" }}
-        >
-          <Text>&copy; {new Date().getFullYear()} Krivaten. All rights reserved</Text>
-          <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"https://twitter.com/krivaten"}>
-              <TwitterIcon width="6" height="6" />
-            </SocialButton>
-            <SocialButton label={"GitHub"} href={"https://github.com/krivaten"}>
-              <GitHubIcon width="6" height="6" />
-            </SocialButton>
-          </Stack>
-        </Container>
-      </Box>
-    </Box>
+    <footer className="bg-white">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+        <div className="flex justify-center space-x-6 md:order-2">
+          {navigation.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-gray-400 hover:text-gray-500"
+            >
+              <span className="sr-only">{item.name}</span>
+              <item.icon className="h-6 w-6" aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+        <div className="mt-8 md:order-1 md:mt-0">
+          <p className="text-center text-xs leading-5 text-gray-500">
+            &copy; {new Date().getFullYear()} Krivaten. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 }

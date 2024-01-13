@@ -3,11 +3,10 @@ import React from "react";
 import { GetStaticProps, GetStaticPropsResult } from "next";
 import { CldImage } from "next-cloudinary";
 import sortBy from "lodash/sortBy";
-import { Box, Heading, Link, Text, Divider, useColorModeValue, Container, Grid } from "@chakra-ui/react";
+import Link from "next/link";
 import clientPromise from "../lib/mddb.mjs";
 import computeFields from "../lib/computeFields";
 import type { CustomAppProps } from "./_app";
-import FormattedDate from "@/components/FormattedDate";
 import serializeBannerPath from "@/lib/serializeBannerPath";
 import config from "@/content/config.mjs";
 import { NextSeo } from "next-seo";
@@ -16,81 +15,72 @@ interface BlogIndexPageProps extends CustomAppProps {
   blogs: IPost[]; // TODO types
 }
 
-export default function Blog({ blogs, meta: { title, description } }: BlogIndexPageProps) {
+export default function Blog({
+  blogs,
+  meta: { title, description },
+}: BlogIndexPageProps) {
   const [firstBlog, ...restBlogs] = blogs;
 
   return (
     <>
       <NextSeo title={title} description={description} />
-      <Container maxW={"7xl"} p={12}>
-        <Heading as="h1">Latest Posts</Heading>
-        <Grid templateColumns={{ md: "50% 1fr", lg: "60% 1fr" }} gap={{ base: 5, md: 12 }} mt={5}>
-          <Box>
-            <Box borderRadius="lg" overflow="hidden">
-              <Link href={firstBlog.urlPath} tabIndex={-1}>
-                <CldImage
-                  src={serializeBannerPath(firstBlog)}
-                  alt=""
-                  width="1200"
-                  height="675"
-                  crop="fill"
-                  format="auto"
-                />
-              </Link>
-            </Box>
-          </Box>
-          <Box>
-            <Heading as="h3">
-              <Link href={firstBlog.urlPath} textDecor="none" _hover={{ textDecor: "none" }}>
-                {firstBlog.title}
-              </Link>
-            </Heading>
-            <Text as="p" color={"gray.500"} fontSize="sm" mt={2} fontStyle={"italic"}>
-              <FormattedDate post={firstBlog} />
-            </Text>
-            <Text as="p" mt={2} color={useColorModeValue("gray.700", "gray.200")} fontSize="lg">
-              {firstBlog.description}
-            </Text>
-          </Box>
-        </Grid>
-        <Divider my="12" />
-        <Grid templateColumns={{ md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }} gap={12} mt={5}>
-          {restBlogs.map((blog) => {
-            return (
-              <Box w="full" key={blog.urlPath}>
-                <Box borderRadius="lg" overflow="hidden">
-                  <Link href={blog.urlPath} tabIndex={-1}>
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Latest Posts
+            </h2>
+            <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+              {blogs.map((post) => (
+                <article
+                  key={post.urlPath}
+                  className="flex max-w-xl flex-col items-start justify-between"
+                >
+                  <Link href={post.urlPath}>
                     <CldImage
-                      src={serializeBannerPath(blog)}
+                      src={serializeBannerPath(post)}
                       alt=""
                       width="1200"
                       height="675"
                       crop="fill"
                       format="auto"
+                      className="rounded-lg mb-5"
                     />
                   </Link>
-                </Box>
-                <Heading as="h3" size="md" mt={2}>
-                  <Link href={blog.urlPath} textDecor="none" _hover={{ textDecor: "none" }}>
-                    {blog.title}
-                  </Link>
-                </Heading>
-                <Text as="p" color={"gray.500"} fontSize="sm" mt={2} fontStyle={"italic"}>
-                  <FormattedDate post={blog} />
-                </Text>
-                <Text as="p" fontSize="md" mt={2} noOfLines={3}>
-                  {blog.description}
-                </Text>
-              </Box>
-            );
-          })}
-        </Grid>
-      </Container>
+                  <div className="flex items-center gap-x-4 text-xs">
+                    {post.date && (
+                      <time
+                        dateTime={new Date(post.date).toISOString()}
+                        className="text-gray-500"
+                      >
+                        {new Date(post.date).toLocaleDateString()}
+                      </time>
+                    )}
+                  </div>
+                  <div className="group relative">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <Link href={post.urlPath}>
+                        <span className="absolute inset-0" />
+                        {post.title}
+                      </Link>
+                    </h3>
+                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                      {post.description}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
 
-export const getStaticProps: GetStaticProps = async (): Promise<GetStaticPropsResult<BlogIndexPageProps>> => {
+export const getStaticProps: GetStaticProps = async (): Promise<
+  GetStaticPropsResult<BlogIndexPageProps>
+> => {
   const mddb = await clientPromise;
   const blogFiles = await mddb.getFiles({ folder: "blog" });
   const sortedBlogFiles = sortBy(blogFiles, (b) => b.metadata?.date).reverse();

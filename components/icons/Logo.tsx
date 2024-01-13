@@ -1,6 +1,13 @@
-import { Icon, IconProps } from "@chakra-ui/react";
-const Logo = (props: IconProps) => (
-  <Icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 480 480" aria-hidden="true" {...props}>
+import { SVGAttributes } from "react";
+
+const Logo = (props: SVGAttributes<SVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 480 480"
+    aria-hidden="true"
+    {...props}
+  >
     <g clipPath="url(#a)">
       <path
         fill="url(#b)"
@@ -10,7 +17,14 @@ const Logo = (props: IconProps) => (
       />
     </g>
     <defs>
-      <linearGradient id="b" x1={20} x2={460} y1={47.961} y2={432.039} gradientUnits="userSpaceOnUse">
+      <linearGradient
+        id="b"
+        x1={20}
+        x2={460}
+        y1={47.961}
+        y2={432.039}
+        gradientUnits="userSpaceOnUse"
+      >
         <stop stopColor="#D1461E" />
         <stop offset={0.25} stopColor="#D65E38" />
         <stop offset={0.5} stopColor="#D97351" />
@@ -21,6 +35,6 @@ const Logo = (props: IconProps) => (
         <path fill="#fff" d="M0 0h480v480H0z" />
       </clipPath>
     </defs>
-  </Icon>
+  </svg>
 );
 export default Logo;

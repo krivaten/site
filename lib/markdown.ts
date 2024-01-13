@@ -83,7 +83,7 @@ const parse = async function (source, format, scope) {
                     "svg",
                     {
                       xmlns: "http:www.w3.org/2000/svg",
-                      fill: "var(--chakra-colors-black)",
+                      className: "fill-black",
                       viewBox: "0 0 48 48",
                       width: "20px",
                       height: "20px",
