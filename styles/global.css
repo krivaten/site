@@ -61,12 +61,6 @@ html {
   transition: opacity 0.2s;
 }
 
-.light .heading-link {
-  /* border: 1px solid #ab2b65; */
-  /* background: none; */
-  background: #e2e8f0;
-}
-
 :is(h2, h3, h4, h5, h6):hover .heading-link {
   opacity: 100;
 }

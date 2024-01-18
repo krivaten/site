@@ -24,53 +24,51 @@ export default function Blog({
   return (
     <>
       <NextSeo title={title} description={description} />
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Latest Posts
-            </h2>
-            <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
-              {blogs.map((post) => (
-                <article
-                  key={post.urlPath}
-                  className="flex max-w-xl flex-col items-start justify-between"
-                >
-                  <Link href={post.urlPath}>
-                    <CldImage
-                      src={serializeBannerPath(post)}
-                      alt=""
-                      width="1200"
-                      height="675"
-                      crop="fill"
-                      format="auto"
-                      className="rounded-lg mb-5"
-                    />
-                  </Link>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    {post.date && (
-                      <time
-                        dateTime={new Date(post.date).toISOString()}
-                        className="text-gray-500"
-                      >
-                        {new Date(post.date).toLocaleDateString()}
-                      </time>
-                    )}
-                  </div>
-                  <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <Link href={post.urlPath}>
-                        <span className="absolute inset-0" />
-                        {post.title}
-                      </Link>
-                    </h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                      {post.description}
-                    </p>
-                  </div>
-                </article>
-              ))}
-            </div>
+      <div className="py-24 sm:py-32 px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl leading-7">
+          <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+            Latest Posts
+          </h1>
+          <div className="mt-10 space-y-16 border-t border-text dark:border-text-dark pt-10 sm:mt-16 sm:pt-16">
+            {blogs.map((post) => (
+              <article
+                key={post.urlPath}
+                className="flex max-w-xl flex-col items-start justify-between"
+              >
+                <Link href={post.urlPath}>
+                  <CldImage
+                    src={serializeBannerPath(post)}
+                    alt=""
+                    width="1200"
+                    height="675"
+                    crop="fill"
+                    format="auto"
+                    className="rounded-lg mb-5"
+                  />
+                </Link>
+                <div className="flex items-center gap-x-4 text-xs">
+                  {post.date && (
+                    <time
+                      dateTime={new Date(post.date).toISOString()}
+                      className="italic text-gray-500"
+                    >
+                      {new Date(post.date).toLocaleDateString()}
+                    </time>
+                  )}
+                </div>
+                <div className="group relative">
+                  <h2 className="mt-3 text-lg font-semibold leading-6  group-hover:text-brand">
+                    <Link href={post.urlPath}>
+                      <span className="absolute inset-0" />
+                      {post.title}
+                    </Link>
+                  </h2>
+                  <p className="mt-5 line-clamp-3 text-sm leading-6">
+                    {post.description}
+                  </p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 /*! @docsearch/css 3.1.0 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 :root {
-  --docsearch-primary-color: red;
-  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-brand-color: red;
+  --docsearch-highlight-color: var(--docsearch-brand-color);
   --docsearch-muted-color: theme("colors.slate.500");
   --docsearch-emphasis-color: theme("colors.slate.900");
   --docsearch-logo-color: #5468ff;
@@ -27,7 +27,7 @@
 }
 
 .dark {
-  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-highlight-color: var(--docsearch-brand-color);
   --docsearch-muted-color: theme("colors.slate.400");
   --docsearch-emphasis-color: theme("colors.white");
   --docsearch-logo-color: theme("colors.slate.300");

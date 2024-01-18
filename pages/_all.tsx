@@ -26,7 +26,7 @@ export default function All({ pages, meta: { title } }: AllPageProps) {
 
   return (
     <SimpleLayout title={title}>
-      <div className="prose dark:prose-invert max-w-[100%] p-6">
+      <div className="prose dark:prose-dark max-w-[100%] p-6">
         {letters.map((letter) => (
           <div key={letter} className="ml-2 pt-2">
             <h3>{letter}</h3>

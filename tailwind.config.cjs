@@ -9,7 +9,7 @@ module.exports = {
     "./node_modules/@flowershow/core/dist/*.js",
     "./node_modules/@flowershow/core/*.js",
   ],
-  darkMode: "class",
+  darkMode: "media",
   theme: {
     extend: {
       // support wider width for large screens >1440px eg. in hero
@@ -23,11 +23,15 @@ module.exports = {
         headings: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        background: {
+        base: {
           DEFAULT: "#F9F7F0",
-          dark: "#242226",
+          dark: "#202121",
         },
-        primary: {
+        text: {
+          DEFAULT: "#202121",
+          dark: "#d3d7da",
+        },
+        brand: {
           DEFAULT: "#D1461E",
           50: "#fdf6f4",
           100: "#faede9",
@@ -40,23 +44,12 @@ module.exports = {
           800: "#7d2a12",
           900: "#66220f",
         },
-        secondary: {
-          DEFAULT: "#6e5c52",
-          50: "#ececec",
-          100: "#cfcfcf",
-          200: "#afafaf",
-          300: "#948e8b",
-          400: "#81746e",
-          500: "#6e5c52",
-          600: "#62534b",
-          700: "#524640",
-          800: "#443a37",
-          900: "#342d2b",
-        },
+        ...require("tailwindcss/colors"),
       },
       typography: {
         DEFAULT: {
           css: {
+            color: "#202121",
             "iframe[src*='youtube.com']": {
               aspectRatio: "16/9",
               width: "100%",
@@ -65,9 +58,14 @@ module.exports = {
             },
           },
         },
+        dark: {
+          css: {
+            color: "#d3d7da",
+          },
+        },
       },
     },
   },
   /* eslint global-require: off */
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/line-clamp")],
+  plugins: [require("@tailwindcss/typography")],
 };

@@ -18,12 +18,12 @@ export default function MdxPage({ source, frontMatter }) {
   const { title, date } = frontMatter;
   const banner = serializeBannerPath(frontMatter);
   return (
-    <div className="bg-white px-6 py-32 lg:px-8">
-      <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="py-24 sm:py-32 px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl leading-7">
+        <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
           {title}
         </h1>
-        <p className="mt-6 text-md leading-8">
+        <p className="mt-6 text-md italic leading-8 text-gray-500">
           <FormattedDate post={frontMatter} />
         </p>
         {banner && (
@@ -36,7 +36,7 @@ export default function MdxPage({ source, frontMatter }) {
             className="mt-6 rounded-lg sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:w-full lg:h-96"
           />
         )}
-        <div className="mt-10 max-w-2xl prose">
+        <div className="mt-10 max-w-2xl prose dark:prose-dark prose-headings:text-text dark:prose-headings:text-text-dark">
           <MDXRemote {...source} components={components} />
         </div>
       </div>
