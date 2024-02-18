@@ -21,7 +21,7 @@ export default async function search() {
         ...doc,
         sourceDir: doc.file_path,
         urlPath: doc.url_path,
-      })
+      }),
       // TODO old contentlayer related code
       // omit(
       //   {

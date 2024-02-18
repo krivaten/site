@@ -5,7 +5,8 @@ const config = {
   author: "Krivaten",
   blogTitle: {
     text: "My recent posts",
-    description: "A delightful blend of personal growth, technical knowledge, and the pursuit of community.",
+    description:
+      "A delightful blend of personal growth, technical knowledge, and the pursuit of community.",
   },
   navbarTitle: {
     text: "Krivaten",

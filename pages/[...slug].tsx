@@ -22,13 +22,20 @@ export default function Page({ source, meta }: SlugPageProps) {
   return (
     <>
       <NextSeo title={meta.title} description={meta.description} />
-      <CldOgImage src={banner} alt={meta.description} twitterTitle={meta.title} format="auto" />
+      <CldOgImage
+        src={banner}
+        alt={meta.description}
+        twitterTitle={meta.title}
+        format="auto"
+      />
       <MdxPage source={source} frontMatter={meta} />
     </>
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }): Promise<GetStaticPropsResult<SlugPageProps>> => {
+export const getStaticProps: GetStaticProps = async ({
+  params,
+}): Promise<GetStaticPropsResult<SlugPageProps>> => {
   const urlPath = params?.slug ? (params.slug as string[]).join("/") : "/";
 
   const mddb = await clientPromise;
@@ -123,7 +130,10 @@ function addPageToSitemap(page: any, sitemap: Array<NavGroup | NavItem>) {
 
       const matchingGroup = currArray
         .filter(isNavGroup)
-        .find((group) => group.path !== undefined && page.url_path.startsWith(group.path));
+        .find(
+          (group) =>
+            group.path !== undefined && page.url_path.startsWith(group.path),
+        );
       if (!matchingGroup) {
         const newGroup: NavGroup = {
           name: capitalize(urlParts[level]),

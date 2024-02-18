@@ -37,7 +37,7 @@ export default function All({ pages, meta: { title } }: AllPageProps) {
                   <li key={urlPath} className="pr-8">
                     <a href={urlPath}>{displayName}</a>
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>
@@ -62,7 +62,7 @@ export const getStaticProps: GetStaticProps = async (): Promise<
         .replace(/-/g, " ")
         .replace(
           /^(\w)(.+)/,
-          (match, p1, p2) => p1.toUpperCase() + p2.toLowerCase()
+          (match, p1, p2) => p1.toUpperCase() + p2.toLowerCase(),
         );
 
       return { urlPath, displayName };
