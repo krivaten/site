@@ -19,7 +19,11 @@ export default function Navigation() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 justify-between">
               <div className="flex justify-between flex-1">
-                <Link href="/" className="flex flex-shrink-0 items-center">
+                <Link
+                  href="/"
+                  className="flex flex-shrink-0 items-center"
+                  title="Krivaten"
+                >
                   <Logo className="h-14 w-auto" />
                 </Link>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-10">

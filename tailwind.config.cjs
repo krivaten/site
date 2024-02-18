@@ -56,6 +56,14 @@ module.exports = {
               height: "auto",
               border: "none",
             },
+            a: {
+              color: "transparent",
+              backgroundImage:
+                "linear-gradient(to right bottom, #D1461E, #df7e62)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            },
           },
         },
         dark: {

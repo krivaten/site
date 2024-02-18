@@ -23,7 +23,7 @@ export default function Example() {
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-500 hover:text-brand"
+              className="text-gray-500 dark:text-gray-400 hover:text-brand"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -31,7 +31,7 @@ export default function Example() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-xs leading-5 text-gray-500">
+          <p className="text-center text-xs leading-5 text-gray-500 dark:text-gray-400">
             &copy; {new Date().getFullYear()} Krivaten. All rights reserved.
           </p>
         </div>

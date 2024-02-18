@@ -35,7 +35,7 @@ export default function Blog({
                 key={post.urlPath}
                 className="flex max-w-xl flex-col items-start justify-between"
               >
-                <Link href={post.urlPath}>
+                <Link href={post.urlPath} title={post.title} tabIndex={-1}>
                   <CldImage
                     src={serializeBannerPath(post)}
                     alt=""
@@ -50,7 +50,7 @@ export default function Blog({
                   {post.date && (
                     <time
                       dateTime={new Date(post.date).toISOString()}
-                      className="italic text-gray-500"
+                      className="italic text-gray-500 dark:text-gray-400"
                     >
                       {new Date(post.date).toLocaleDateString()}
                     </time>

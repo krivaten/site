@@ -23,7 +23,7 @@ export default function MdxPage({ source, frontMatter }) {
         <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
           {title}
         </h1>
-        <p className="mt-6 text-md italic leading-8 text-gray-500">
+        <p className="mt-6 text-md italic leading-8 text-gray-500 dark:text-gray-400">
           <FormattedDate post={frontMatter} />
         </p>
         {banner && (
