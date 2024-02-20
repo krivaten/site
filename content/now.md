@@ -1,13 +1,12 @@
 ---
 title: Now
 description: 
-banner: 06 - Assets/default.jpg
+banner: "06 - Assets/default.jpg"
 tags: 
 publish: true
 date: 2018-06-01
 updated: 2024-02-16
 ---
-
 
 ## So much change
 
@@ -30,10 +29,10 @@ Here are some things that have been adding value or impact to my life lately:
 
 ### Top five interests
 
-- Christian
+- Christianity
 - [Simulation Theory](https://www.simulation-argument.com/simulation.html)
 - [Stoicism](https://dailystoic.com/what-is-stoicism-a-definition-3-stoic-exercises-to-get-you-started/)
-- Homesteading, Gardening, Hydroponics, and Mycology
+- Homesteading
 - Special needs community
 
 ### Top five people
@@ -51,13 +50,6 @@ Here are some things that have been adding value or impact to my life lately:
 - [Making Sense of God by: Timothy Keller](https://amzn.to/3oqYtWA)
 - [Meditations by: Marcus Aurelius](https://amzn.to/2ZHp07E)
 - [The Immortality Key by: Brian Muraresku](https://amzn.to/3D80L0O)
-
-### Top five products and brands
-
-- [Obsidian](https://obsidian.md/)
-- [No Mans Sky](https://www.nomanssky.com/)
-- [Spartan Race](https://www.spartan.com/en)
-- [GoRuck](https://www.goruck.com/)
 
 ### Top five podcasts
 
