@@ -50,6 +50,9 @@ module.exports = {
         DEFAULT: {
           css: {
             color: "#202121",
+            strong: {
+              color: "#202121",
+            },
             "iframe[src*='youtube.com']": {
               aspectRatio: "16/9",
               width: "100%",
@@ -69,6 +72,9 @@ module.exports = {
         dark: {
           css: {
             color: "#d3d7da",
+            strong: {
+              color: "#d3d7da",
+            },
           },
         },
       },
