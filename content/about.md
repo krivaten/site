@@ -1,25 +1,31 @@
 ---
 title: About Me
-description:
-banner: "06 - Assets/default.jpg"
-tags:
+description: 
+banner: 06 - Assets/default.jpg
+tags: 
 publish: true
 date: 2023-05-10
-updated: 2023-05-10
+updated: 2024-02-24
 ---
 
-Life is full of battles, and let's be honest, it's not going to get any easier any time soon.
+I'm a husband and father, software engineer and manager, mentor and advocate in the special-needs community, who wants to build things that matter.
 
-Like you, challenges have come to me in several ways. For example, I was born with a bleeding disorder that has hung like the sword of Damocles over my head for my entire life, forcing me to wonder if it will be the thing that gets me in the end.
+You can find me on [Twitter/X](https://twitter.com/krivaten) and [GitHub](https://github.com/krivaten).
 
-Most recently, my wife and I were gifted with a special needs son. As a result, we've had to learn to navigate life in a way we never expected while trying to parent our other three kids.
+## Husband and father
 
-I've also battled depression, anxiety, suicide, faith, church, marriage, community, and more. But **I'm nothing special**. Chances are, you've marched across many of those battlefields as well.
+Been married to my wonderful bride since 2006, and together we've been raising four outstanding children. If you had told me this was the life I'd have when I was a silly teenager I would've laughed, but I wouldn't have it any other way.
 
-Along the way, I've found safe passage through my faith, stoicism, elements of mysticism, psychedelics, and my pursuit of encouraging others toward meaning and community.
+## Software engineer and manager
 
-Maybe you'll relate to me in feeling like we've made life so much more complicated than it needs to be. Or perhaps you're like I *used* to be, stuck, waiting for a voice from the sky to dictate every step we're supposed to take.
+Been doing web development seriously since around 2010. I've worked in PHP, JavaScript, Ruby, Python, and a few other technologies, but recently have started transitioning towards management in the hopes of using the entirety of my skillset to help other people level up.
 
-But sometimes, patience is a complete waste of time. **Let's start by building momentum**, one muddy and sloppy step at a time. Together, we'll explore how to have a healthier outlook and break down outdated stigmas we've accrued within our lives, our faith, and our philosophy.
+## Mentor and advocate
 
-Towards life and towards love.
+Having a child with special needs has thrown our family into a whole new world, but it is one that we have come to love and support. Together, my wife and I help lead support groups while I try to focus on helping fathers thrive in this setting.
+
+## Build things that matter
+
+When it comes to side-projects and things I am working towards, in the end, I want to build things that matter. I'm currently trying to focus on some community building tools and projects, but have plenty of ideas that I'm thinking through to help the special needs community succeed in various areas of life including: mental health, independence, finding meaning, and giving back.
+
+My values put me the camp of wanting others to know that they belong and pushing myself and others towards excellence in any and all areas of life. 
